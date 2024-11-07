@@ -1,0 +1,8 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.intellij.modules.ultimate</id>
+    <name>Community2Enterprise ultimate</name>
+    <vendor>epa</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+</idea-plugin>
