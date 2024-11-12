@@ -1,8 +1,29 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-<idea-plugin package="com.epa" require-restart="true">
-    <id>com.intellij.modules.ultimate</id>
-    <name>Community2Enterprise ultimate</name>
+<idea-plugin package="com.epa" require-restart="false">
+    <id>community2enterprise</id>
+    <module value="com.intellij.modules.ultimate"/>
+    <module value="com.intellij.modules.idea.ultimate"/>
+    <module value="com.intellij.modules.go-capable"/>
+    <name>Community2Enterprise</name>
     <vendor>epa</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity
+                implementation="com.epa.PluginStartupActivity"/>
+        <applicationService serviceInterface="com.intellij.openapi.components.PersistentStateComponent"
+                            serviceImplementation="com.epa.PluginInstallState"/>
+        <applicationService serviceInterface="com.intellij.execution.process.ElevationService"
+                            serviceImplementation="com.intellij.execution.process.elevation.ElevationServiceImpl"/>
+        <applicationService serviceInterface="com.intellij.execution.process.ElevationServiceAvailability"
+                            serviceImplementation="com.intellij.execution.process.elevation.ElevationServiceAvailabilityImpl"/>
+
+        <!--        <applicationConfigurable parentId="preferences.general"
+                                         instance="com.intellij.execution.process.elevation.settings.ElevationSettingsConfigurable"
+                                         bundle="messages.ElevationBundle"
+                                         key="elevation.settings.configurable"
+                                         id="application.elevation"
+                                         order="before application.passwordSafe"/>-->
+    </extensions>
 </idea-plugin>

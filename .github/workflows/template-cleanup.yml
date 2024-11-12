@@ -40,7 +40,7 @@ jobs:
           sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
 
           # Replace template package name in project files with $GROUP
-          find src -type f -exec sed -i "s/com.intellij.modules.ultimate/$GROUP/g" {} +
+          find src -type f -exec sed -i "s/com.epa/$GROUP/g" {} +
           find src -type f -exec sed -i "s/Community2Enterprise/$NAME/g" {} +
           find src -type f -exec sed -i "s/JetBrains/$ACTOR/g" {} +
 
