@@ -10,7 +10,7 @@
 
 1. Download and install [Community2Enterprise](https://github.com/01epa/Community2Enterprise/releases) plugin
 2. Download and install [go](https://plugins.jetbrains.com/plugin/9568-go/versions#tabs) plugin
-3. Restart IDE
+3. You will be asked to restart IDE
 
 
 Note: [Read](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_disk) how to install plugin from disk
