@@ -8,7 +8,7 @@
 
 ## How to install go plugin to Community idea:
 
-1. Download and install [ultimate plugin](https://github.com/01epa/Community2Enterprise/releases)
+1. Download and install [Community2Enterprise plugin](https://github.com/01epa/Community2Enterprise/releases)
 2. Download and install [go plugin](https://plugins.jetbrains.com/plugin/9568-go/versions#tabs)
 3. Restart IDE
 
